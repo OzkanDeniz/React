@@ -6,7 +6,7 @@ const OgrenciItem = () => {
 //!3 (context consumer) globalde  (mesela App.js yada ayrı bir context sayfası) tanımladığım değerleri buraya çağırdık
 
 
-const {students} = useContext(StudentContext)
+const {students,changeColor} = useContext(StudentContext)
 
 
 

@@ -1,14 +1,15 @@
-import React from 'react'
-import GosterUsers from './pages/GosterUsers'
-
+import React from "react";
+import GosterUsers from "./pages/GosterUsers";
+import KullaniciProvider from "./context/KullaniciProvider";
 
 const App = () => {
   return (
     <div>
-
-      <GosterUsers/>
+      <KullaniciProvider>
+        <GosterUsers />
+      </KullaniciProvider>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
