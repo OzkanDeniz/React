@@ -12,7 +12,7 @@ const [users,setUsers]=useState([])
 
 
 useEffect(()=>{
-  fetch("https://api.github.com/users").then((res)=>res.json()).then((veri)=>  )
+  fetch("https://api.github.com/users").then((res)=>res.json()).then((veri)=>)
 },[])
 
 
