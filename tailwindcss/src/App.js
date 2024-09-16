@@ -2,6 +2,7 @@ import FlexandResponsive from "./components/FlexandResponsive";
 import HoverandFocus from "./components/HoverandFocus";
 import SpacingandSizing from "./components/SpacingandSizing";
 import Typography from "./components/Typography";
+import Navbar from "./components/Navbar"
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
      {/* <Typography/> */}
      {/* <SpacingandSizing/> */}
      {/* <HoverandFocus/> */}
-     <FlexandResponsive/>
+     {/* <FlexandResponsive/> */}
+    <Navbar/>
     </div>
   );
 }

@@ -11,6 +11,12 @@ const FlexandResponsive = () => {
         <div className='basis-2/4 bg-fuchsia-500'>05</div>
         <div className='basis-2/4 bg-fuchsia-500'>06</div>
       </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
+      {Array.from({ length:8 },(_,item)=>(
+        <div className='bg-teal-500'>{item}</div>
+      ))}
+      </div>
+     
     </div>
   )
 }
