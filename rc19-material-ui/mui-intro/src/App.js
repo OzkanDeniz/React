@@ -1,8 +1,13 @@
+import Container from '@mui/material/Container';
+import { Typography } from '@mui/material';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Cohort 17</h1>
-    </div>
+    <Container maxWidth={"xl"}>
+      <Typography variant="h3" component="h1"  gutterBottom>
+        Cohort 17 - MUI
+      </Typography>
+    </Container>
   );
 }
 
