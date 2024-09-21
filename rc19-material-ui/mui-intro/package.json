@@ -1,16 +1,11 @@
 {
-  "name": "movie-app-1",
+  "name": "first-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@headlessui/react": "^2.1.8",
-    "@heroicons/react": "^2.1.5",
-    "firebase": "^9.6.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.1",
-    "react-toastify": "^8.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,8 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.1"
   }
 }
