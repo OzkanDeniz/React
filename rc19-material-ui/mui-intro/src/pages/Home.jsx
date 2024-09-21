@@ -5,7 +5,7 @@ import MuiInputElem from "../components/MuiInputElem";
 export default function Home() {
   return (
     <div>
-      {/* <MuiElem /> */}
+      <MuiElem />
       <MuiInputElem/>
     </div>
   );
