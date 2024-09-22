@@ -1,8 +1,18 @@
+import Container from "@mui/material/Container";
+import Products from "./pages/Products";
+import { ThemeProvider } from "@emotion/react";
+import { createTheme } from '@mui/material/styles';
+
+
+const theme = createTheme();
+
 function App() {
   return (
-    <div className="App">
-      <h1>Cohort 17</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Products/>
+      </Container>
+    </ThemeProvider>
   );
 }
 
