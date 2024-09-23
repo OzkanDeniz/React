@@ -2,7 +2,7 @@
 
 
 const Header = () => {
-    const mesaj = "Hello World"
+    const mesaj = "Header"
   return (
     <header>
       <h1 className="par">{mesaj}</h1>
