@@ -5,13 +5,22 @@ import { createSlice } from "@reduxjs/toolkit";
 
   initialState: {
     email: "",
-    passwoed: "",
+    password: "",
   },
 
   reducers: {
-    kullaniciOlustur: () => {},
+    kullaniciOlustur: (state,action) => {
 
-    kullaniciSil: () => {},
+        state.email=action.payload.email
+        state.password=action.payload.password
+
+    },
+
+    kullaniciSil: (state) => {
+state.email=""
+state.password=""
+
+    },
   },
 });
 

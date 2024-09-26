@@ -17,7 +17,7 @@ const News = () => {
 
   return (
     <>
-    
+  
         <Box
           xs={{ d: "flex" }}
           display="flex"

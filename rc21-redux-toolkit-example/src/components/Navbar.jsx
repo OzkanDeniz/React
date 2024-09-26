@@ -1,8 +1,18 @@
 import React from 'react'
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { useDispatch, useSelector } from 'react-redux';
+import { kullaniciSil } from '../features/yetkiSlice';
 
 const Navbar = () => {
+const {email}=useSelector((state)=>state.yetkiSlice)
+  const dispatch=useDispatch()
 
+
+  const signOut=()=>{
+
+    dispatch(kullaniciSil())
+
+}
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -17,8 +27,10 @@ const Navbar = () => {
           </Typography>
 
         
+           {
+            email ?  (<Button color="inherit" onClick={signOut} >LogOut</Button>) :  <Button color='inherit'>Login</Button>
+           }
            
-            <Button color="inherit" >LogIn</Button>
        
         </Toolbar>
       </AppBar>
