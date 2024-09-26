@@ -1,3 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const yetkiSlice = createSlice()
+ const yetkiSlice = createSlice({
+  name: "yetkiSlice",
+
+  initialState: {
+    email: "",
+    passwoed: "",
+  },
+
+  reducers: {
+    kullaniciOlustur: () => {},
+
+    kullaniciSil: () => {},
+  },
+});
+
+export const {kullaniciOlustur,kullaniciSil}=yetkiSlice.actions
+
+export default yetkiSlice.reducer
