@@ -3,13 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import News from "../pages/News";
 import Login from "../pages/Login";
 import PrivateRouter from "./PrivateRouter";
-import Navbar from '../components/Navbar';
+import Navbar from "../components/Navbar";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
-
-    <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<PrivateRouter />}>
           <Route path="" element={<News />} />

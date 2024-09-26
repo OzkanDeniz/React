@@ -16,7 +16,7 @@ const dispatch=useDispatch()
 
 
 const handleSubmit=(e)=>{
-  e.prevenDefault()
+  e.preventDefault()
 
   dispatch(kullaniciOlustur({email,password}))
 
