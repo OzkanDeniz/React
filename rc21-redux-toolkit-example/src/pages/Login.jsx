@@ -1,8 +1,14 @@
 import React from 'react'
 import {Avatar, Box, Button, Container, Link, TextField, Typography} from "@mui/material";
+import { useSelector } from 'react-redux';
 
 const Login = () => {
 
+let {email,password}=useSelector((state)=>state.yetkiSlice)
+
+const handleSubmit=(e)=>{
+  e.prevenDefault()
+}
 
   return (
     <Container component="main" maxWidth="xs">
@@ -25,7 +31,7 @@ const Login = () => {
         {/* noValidate=doğrulanmasın
         autocomplete=Otomatik Tamamlama listesi, siz yazmaya başladığınızda adlara ve e-posta adreslerine ilişkin önerileri görüntüleyen bir özelliktir. Bu öneriler, gönderdiğiniz e-posta mesajlarındaki ad ve e-posta adresleri listesindeki olası eşleşmelerdir.
          */}
-        <Box component="form" noValidate sx={{ mt: 1 }}>
+        <Box onSubmit={handleSubmit} component="form" noValidate sx={{ mt: 1 }}>
           <TextField
             margin="normal"
             required
@@ -35,6 +41,7 @@ const Login = () => {
             name="email"
             autoComplete="email"
             autoFocus
+            onChange={(e)=>(email=e.target.value)}
             
           />
           <TextField
@@ -45,6 +52,7 @@ const Login = () => {
             label="Password"
             type="password"
             id="password"
+            onChange={(e)=>(password=e.target.value)}
             
           />
 
